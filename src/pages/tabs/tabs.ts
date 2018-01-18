@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import {Component} from '@angular/core';
+import {IonicPage, NavController} from 'ionic-angular';
+import {TableauPage} from "../tableau/tableau";
+import {CartePage} from "../carte/carte";
+import {ExportPage} from "../export/export";
 
 /**
  * Generated class for the TabsPage tabs.
@@ -10,16 +13,17 @@ import { IonicPage, NavController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-tabs',
-  templateUrl: 'tabs.html'
+    selector: 'page-tabs',
+    templateUrl: 'tabs.html'
 })
 export class TabsPage {
 
-  tableauRoot = 'TableauPage'
-  carteRoot = 'CartePage'
-  exportRoot = 'ExportPage'
+    tableauRoot = TableauPage;
+    carteRoot = CartePage;
+    exportRoot = ExportPage;
 
 
-  constructor(public navCtrl: NavController) {}
+    constructor(public navCtrl: NavController) {
+    }
 
 }

@@ -3,7 +3,10 @@
         <ion-title>
             Open Annuaire
         </ion-title>
+        <ion-tabs>
+        </ion-tabs>
     </ion-navbar>
+
 </ion-header>
 
 <ion-content padding>
@@ -15,4 +18,15 @@
     <button ion-button block (click)="presentActionSheet()">
         Show Action
     </button>
+
+
+    <ion-tabs>
+        <ion-tab [root]="tableauRoot" tabTitle="Tableau" tabIcon="information-circle"></ion-tab>
+        <ion-tab [root]="carteRoot" tabTitle="Carte" tabIcon="map"></ion-tab>
+        <ion-tab [root]="exportRoot" tabTitle="Export" tabIcon="information-circle"></ion-tab>
+    </ion-tabs>
+
+
+
 </ion-content>
+
